@@ -10,7 +10,7 @@
     <style>
         #paging .active {background-color: #EDF7FF;color: silver;cursor: no-drop;}
         #dataList{background-color: #edf7ff;border-radius: 7px;direction: rtl;border: 1px solid #9fc3df;}
-        #dataList div{border-bottom: 1px solid white;padding: 15px;}
+        #dataList .data{border-bottom: 1px solid white;padding: 15px;}
         #paging{margin-top: 10px;}
         #paging button{background-color: #d1e2f0;border: 1px solid #9fc3df;border-radius: 3px;margin-left: 3px;font-size: 11pt;padding: 8px;padding-right: 8px;padding-left: 8px;padding-left: 11px;padding-right: 11px;}
         #noResult{display: none;}
@@ -20,7 +20,6 @@
     </style>
 </head>
 <body>
-
 <section style="margin: 0 auto;width: 50%;">
     <div style="display: flex;margin-bottom: 7px;">
       <div class="titlebar">
@@ -32,21 +31,25 @@
       </div>
     </div>
     <div id="dataList">
-      <div>داده 1</div>
-      <div>داده 2</div>
-      <div>داده 3</div>
-      <div>داده 4</div>
-      <div>داده 5</div>
-      <div>داده 6</div>
-      <div>داده 7</div>
-      <div>داده 8</div>
-      <div>داده 9</div>
-      <div>داده 10</div>
+      <div class="data">داده 1</div>
+      <div class="data">
+        <div style="display: flex;">
+          <div style="width: 50%;">داده 2 - الف</div>
+          <div style="width: 50%;">داده 2 - ب</div>  
+        </div>
+      </div>
+      <div class="data">داده 3</div>
+      <div class="data">داده 4</div>
+      <div class="data">داده 5</div>
+      <div class="data">داده 6</div>
+      <div class="data">داده 7</div>
+      <div class="data">داده 8</div>
+      <div class="data">داده 9</div>
+      <div class="data">داده 10</div>
     </div>
     <div id="noResult">نتیجه ای یافت نشد.</div>
     <div id="paging"></div>
 </section>
 <script src="paging.js"></script>
-
 </body>
 </html>
